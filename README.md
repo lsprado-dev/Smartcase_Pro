@@ -88,6 +88,3 @@ This repository acts as a **Public Staging and Documentation Mirror**. To protec
     <img src="https://img.shields.io/badge/Instagram-531a8c?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
 </p>
-
----
-*Solving challenges, delivering results. 2026 Staging Environment.*
