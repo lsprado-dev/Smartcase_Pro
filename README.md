@@ -12,47 +12,49 @@
 
 ### Core Features
 
-#### Smart Formatting
-- **Intelligence-driven Case Conversion:** UPPERCASE, lowercase, and Title Case (with smart preposition handling).
-- **Sentence Case:** Automatic first-letter capitalization for quick drafts.
-
-#### Professional Data Tools
-- **Deep Clean:** Instant removal of double line breaks and redundant spacing.
-- **System Ready:** Remove accents and special characters for clean URL/code generation.
-- **Data Organization:** A-Z sorting and real-time floating character/word counters.
-- **Web Decoding:** Convert encoded URLs into human-readable text.
-
-#### Extraction & Privacy (Advanced)
-- **Data Redaction:** One-click masking of emails, sensitive documents, and long identification numbers (***).
-- **Smart Extraction:** Instantly isolate only emails or links from massive text blocks.
-
-#### Developer Mode
-- Instant conversion to **camelCase**, **snake_case**, and **kebab-case**.
+- **Smart Formatting:** UPPERCASE, lowercase, Title Case and Sentence Case.
+- **Professional Data Tools:** Deep clean (spaces/lines), A-Z sorting, and URL decoding.
+- **Extraction & Privacy:** One-click data redaction (***) and email/link extraction.
+- **Developer Mode:** Instant conversion to camelCase, snake_case, and kebab-case.
 
 ---
 
 ### Technical Architecture & Public Staging
 
-This repository serves as a **Public Staging and Documentation Mirror**. 
+This repository acts as a **Public Staging and Documentation Mirror**. To protect the proprietary logic and unique "Marketing DNA" algorithms of the **SmartCase Pro Engine**, the file structure is distributed as follows:
 
-To protect the proprietary logic and unique "Marketing DNA" algorithms of the **SmartCase Pro Engine**, only the interface structure and extension manifest are hosted publicly here.
+#### 🟢 Publicly Hosted (In this repository)
+- **`manifest.json`**: Full extension architecture (Manifest V3).
+- **`popup.html`**: The structural interface and UI layout of the extension.
+- **`style.css`**: The complete visual identity and Glassmorphism design system.
+- **`README.md`**: Technical documentation and usage guide.
 
-- **Manifest V3:** Modern extension architecture for maximum performance.
-- **UI/UX:** Premium Dark Mode interface inspired by Glassmorphism.
-- **Localization:** Native support for 6 languages (EN, PT, ES, PL, HI, ZH).
-- **Core Engine:** Proprietary JavaScript logic (processed locally in-browser).
+#### 🔴 Proprietary Logic (Excluded from Public Mirror)
+- **`background.js`**: Service workers and context menu logic.
+- **`content.js`**: DOM manipulation and text injection engine.
+- **`popup.js`**: Core formatting algorithms and state management.
+
+*The full source code is maintained in a private production environment for security and IP protection.*
 
 ---
 
-### Privacy First (100% Secure)
+### Professional Insights (v.2026)
 
-Privacy is the foundation of this project. **SmartCase Pro** processes all data locally within the user's browser. No text, logs, or personal data is ever collected, saved, or transmitted to external servers.
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lsprado-dev&theme=calm&hide=C++,PHP&langs_count=6&text_color=A371F7&icon_color=A371F7&title_color=A371F7&bg_color=0D1117&hide_border=true" alt="Lucas Languages" />
 
 ---
 
-### Developer
-**Lucas Prado | @lsprado-dev**
-Optimization Specialist & Web Developer based in Kraków, Poland.
+### Connect with Me
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/lsprado/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-531a8c?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.instagram.com/lsprado_dev/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-531a8c?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+</p>
 
 ---
 *Solving challenges, delivering results. 2026 Staging Environment.*
