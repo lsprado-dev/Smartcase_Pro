@@ -1,0 +1,35 @@
+body { width: 350px; font-family: sans-serif; margin: 0; background-color: #f4f7f5; }
+.header { background: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ddd; }
+.logo-text { margin: 0; color: #2e7d32; font-size: 18px; }
+.logo-text span { background: #26a69a; color: #fff; padding: 2px 5px; border-radius: 4px; font-size: 10px; }
+
+.status-container { text-align: center; padding: 20px; background: #fff; }
+.status-circle { width: 60px; height: 60px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; }
+.status-circle h1 { color: #fff; margin: 0; }
+.green-status { background: #43a047; }
+.yellow-status { background: #fb8c00; }
+.red-status { background: #e53935; }
+
+.tools-card, .metrics-card { background: #fff; margin: 10px; border-radius: 8px; border: 1px solid #eee; overflow: hidden; }
+.section-title { padding: 10px; font-size: 11px; color: #888; text-transform: uppercase; margin: 0; }
+.setting-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #f9f9f9; }
+.setting-title { font-size: 13px; font-weight: bold; display: block; }
+.setting-desc { font-size: 11px; color: #777; }
+
+/* Switch */
+.switch { position: relative; width: 34px; height: 18px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 18px; }
+.slider:before { position: absolute; content: ""; height: 12px; width: 12px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+input:checked + .slider { background-color: #26a69a; }
+input:checked + .slider:before { transform: translateX(16px); }
+
+/* Drawers */
+.metric-row { padding: 12px; cursor: pointer; display: flex; justify-content: space-between; }
+.metric-drawer { display: none; padding: 10px; background: #fafafa; border-top: 1px solid #eee; }
+.metric-drawer.show { display: block; }
+
+.chart-container { display: flex; align-items: flex-end; height: 50px; gap: 5px; padding: 10px; }
+.chart-bar { flex: 1; background: #26a69a; min-height: 2px; }
+
+.btn-primary { width: calc(100% - 20px); margin: 10px; padding: 12px; background: #333; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }

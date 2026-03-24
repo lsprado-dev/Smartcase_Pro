@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h2 class="logo-text">GreenGuard <span>Web</span></h2>
+        <select id="lang-selector" class="lang-select">
+            <option value="pt">PT</option>
+            <option value="en">EN</option>
+        </select>
+    </div>
+
+    <div class="status-container">
+        <div class="status-circle" id="status-circle-ui">
+            <h1 id="grade">A</h1>
+        </div>
+        <p class="status-text" id="ui-status-text">Analisando impacto...</p>
+    </div>
+
+    <div class="tools-card">
+        <h3 class="section-title" data-i18n="quickActions">Ações Rápidas</h3>
+        
+        <div class="settings-list">
+            <div class="setting-item">
+                <div class="setting-info">
+                    <span class="setting-title" data-i18n="ecoNight">Modo Eco-Night</span>
+                    <span class="setting-desc" data-i18n="ecoNightDesc">Força cores escuras (OLED)</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <div class="setting-info">
+                    <span class="setting-title" data-i18n="adBlock">Bloquear Anúncios</span>
+                    <span class="setting-desc" data-i18n="adBlockDesc">Remove banners e propagandas</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="ad-block-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <div class="setting-info">
+                    <span class="setting-title" data-i18n="cookieShield">Escudo de Cookies</span>
+                    <span class="setting-desc" data-i18n="cookieDesc">Oculta cookies e notificações</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="cookie-shield-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-item">
+                <div class="setting-info">
+                    <span class="setting-title" style="color: #d32f2f;" data-i18n="autoBurn">Limpeza Automática</span>
+                    <span class="setting-desc" data-i18n="autoBurnDesc">Limpa rastros ao sair da aba</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="auto-burn-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="metrics-card">
+        <div class="metric-row" id="carbon-toggle">
+            <div class="metric-data">
+                <span class="metric-label" data-i18n="carbonFootprint">Pegada de Carbono</span>
+                <span class="metric-value" id="carbon-value">0.00g CO2</span>
+            </div>
+        </div>
+        <div class="metric-drawer" id="carbon-details">
+            <ul id="carbon-reasons" style="margin:0; padding-left:15px;"></ul>
+        </div>
+
+        <div class="metric-row" id="tracker-toggle" style="border-top: 1px solid #f4f7f6;">
+            <div class="metric-data">
+                <span class="metric-label" data-i18n="trackers">Rastreadores</span>
+                <span class="metric-value" id="tracker-value">0 Detectados</span>
+            </div>
+        </div>
+        <div class="metric-drawer" id="tracker-details">
+            <div id="tracker-list" style="display:flex; flex-wrap:wrap; gap:5px;"></div>
+        </div>
+
+        <div class="metric-row" id="history-toggle" style="border-top: 1px solid #f4f7f6;">
+            <div class="metric-data">
+                <span class="metric-label" data-i18n="historyTitle">Histórico (7 dias)</span>
+                <span class="metric-value">Ver Gráfico</span>
+            </div>
+        </div>
+        <div class="metric-drawer" id="history-details">
+            <div class="chart-container" id="history-chart"></div>
+        </div>
+    </div>
+
+    <button id="clean-btn" class="btn-primary" data-i18n="cleanBtn">LIMPAR RASTROS AGORA</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
